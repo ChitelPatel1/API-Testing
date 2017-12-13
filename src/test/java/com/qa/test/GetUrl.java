@@ -91,22 +91,12 @@ public class GetUrl extends TestBase{
 		
 		for(Header allHeades : headerArray){
 			hasMap.put(allHeades.getName(), allHeades.getValue());
-			//headerValue = hasMap.get(allHeades.getName());
-			//if(headerValue.contains("chunked")){
-			//	System.out.println("header Value : "+ hasMap.get(allHeades.getValue()));
-			//	System.out.println("header Value : "+ headerValue);
-			//	Assert.assertEquals(headerValue, "chunked");
-		
-			
-			
-			
-			
-		//
+
 			}
 			System.out.println("Size of allHeades :" + hasMap.size() );
 
 
-			System.out.println("Print Header :" + hasMap );
+			System.out.println("Print Header :" + hasMap.get("Content-Type"));
 			//System.out.println("print value at index 2: "+ hasMap)
 	}
 		
